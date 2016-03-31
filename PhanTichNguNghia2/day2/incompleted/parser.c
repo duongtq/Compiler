@@ -550,6 +550,7 @@ void compileExpression3(void) {
     compileTerm();
     compileExpression3();
     break;
+    // check the FOLLOW set
   case KW_TO:
   case KW_DO:
   case SB_RPAR:
@@ -588,6 +589,7 @@ void compileTerm2(void) {
     compileFactor();
     compileTerm2();
     break;
+    // check the FOLLOW set
   case SB_PLUS:
   case SB_MINUS:
   case KW_TO:
